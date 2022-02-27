@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <div id="main">
+        <div id="left">
+            <div id="login_text">
+                <h1>Why Login?</h1>
+
+                <h5>Manage your orders</h5>
+                <h5>Get exclusive deals and offers</h5>
+                <h5>Personalized Recommendations</h5>
+            </div>
+            <div id="register_text">
+                <h1>Why Sign UP?</h1>
+
+                <h5>Over 1.5 million satisfied customers</h5>
+                <h5>Earn HK cash on every order</h5>
+                <h5>Get personal fitness expert advice</h5>
+
+            </div>
+
+
+        </div>
+        <div id="right">
+            <div id="right_header">
+
+                <button id="login_option" onclick="login_option()">Login</button>
+                <button id="signup_option" onclick="register_option()">Signup</button>
+            </div>
+
+            <div id="right_body">
+
+                <div id="login_div">
+                    <h3>Mobile Number</h3>
+                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
+                    <button id="login_btn" onclick="login_b()">LOGIN VIA OTP
+                    </button>
+
+                    <hr>
+                    <button id="btn_google"></button>
+                </div>
+
+                <div id="register_div">
+                    <h3>Mobile Number</h3>
+                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
+                    <button id="register_btn" onclick="register_b()">SEND OTP</button>
+                    <p id="para">We will send you an OTP to verify your Mobile number</p>
+
+                    <hr>
+                    <button id="btn_google"></button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    let login_div = document.getElementById("login_div");
+    let register_div = document.getElementById("register_div");
+    let login_optio = document.getElementById("login_option");
+    let register_optio = document.getElementById("signup_option");
+    let login_text = document.getElementById("login_text");
+    let resgister_text = document.getElementById("register_text");
+
+    function register_option() {
+
+        register_optio.style.color = "rgba(67, 223, 189, 0.822)";
+
+        login_optio.style.color = "black";
+        login_div.style.display = "none";
+        register_div.style.display = "contents";
+
+        login_text.style.display = "none";
+        register_text.style.display = "contents";
+        // register_div.style.left = "50px";
+    }
+
+    function login_option() {
+
+        register_optio.style.color = "black                                                                        ";
+        login_option.style.color = "rgba(67, 223, 189, 0.822)";
+        register_div.style.display = "none";
+        login_div.style.display = "contents";
+
+        login_text.style.display = "contents";
+        register_text.style.display = "none";
+
+    }
+
+    function login_b() {
+        //event.preventDefault()
+        //console.log("yes")
+        alert("Otp has been sent to your register Mobile Number");
+        window.location.href = "otp.html"
+    }
+
+    function register_b() {
+
+        alert("Otp has been sent to your register Mobile Number");
+        window.location.href = "otp.html"
+    }
+</script>
+
+</html>

@@ -1,0 +1,147 @@
+#span {
+    background-color: green;
+    color: white;
+}
+
+.pin {
+    display: flex;
+}
+
+.Apply {
+    display: flex;
+    justify-content: space;
+}
+
+.save-your-cart {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 4%;
+    border: 1px solid rgb(160, 159, 159);
+    background-color: white
+}
+
+.save-your-cart>a {
+    color: black
+}
+
+.save-your-cart-img {
+    width: 25%
+}
+
+#container {
+    display: flex;
+    margin-top: 3%;
+    /**/
+}
+
+#cart_item {
+    width: 55%;
+    /*border: 1px solid;*/
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+#payment {
+    width: 22%;
+    /*border: 1px solid;*/
+}
+
+.proceed-to-checkout {
+    /*border: 1px solid;*/
+    border-radius: 10px;
+    width: 92%;
+    text-align: center;
+    padding: 4%;
+    margin-top: 4%;
+    background-color: orangered;
+}
+
+.proceed-to-checkout>a {
+    text-decoration: none;
+    color: white;
+    font-size: large
+}
+
+.flex {
+    display: flex;
+    width: 95%;
+    margin-left: 3%;
+    /*margin-right: 2%;*/
+    padding: 4% 0%;
+    justify-content: space-between;
+}
+
+.flex1 {
+    display: flex;
+    width: 100%;
+    /*border: 1px solid;*/
+    margin-top: 4%;
+    padding: 4% 0%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+
+#order {
+    margin-top: 4%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*border: 1px solid;*/
+    margin-bottom: 4%;
+    padding: 2%;
+    /*padding-right: 4%;*/
+    background-color: white
+}
+
+body {
+    background-color: rgb(236, 235, 232);
+}
+
+#summary {
+    /*border: 1px solid;*/
+    padding: 4%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(237, 248, 246);
+}
+
+#cart {
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    /*border: 1px solid;*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white
+    /*background-color: rgb(237, 248, 246);*/
+}
+
+.location {
+    padding-left: 20%;
+}
+
+#Item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*border: 1px solid;*/
+    height: 500px;
+    margin-top: 20px;
+}
+
+#Item>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#Item>div {
+    margin-left: 5px;
+    width: 300px;
+    height: 200px;
+    /*border: 1px solid;*/
+    /*display: flex*/
+}
+
+
+/*
+#Item>div1 {
+    width: 200px;
+}*/

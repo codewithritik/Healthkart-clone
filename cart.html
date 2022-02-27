@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <style>
+        /*.input_block cart {
+            padding: 512%
+        }*/
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cart_item">
+            <div id="cart">My Cart</div>
+            <div id="Item"></div>
+        </div>
+        <div id="payment">
+            <div>
+                <div class="flex1">
+                    <div class="input_block cart">
+                        <img class="loaction" src="https://static1.hkrtcdn.com/hknext/static/media/common/location-grey.svg">
+                        <input placeholder="Enter Pin Code" name="pincode" value="">
+                    </div>
+                    <div><button id="span">Check</button></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex1">
+                    <img class="loaction" src="https://static1.hkrtcdn.com/hknext/static/media/cart/discount.png">
+                    <div class="Coupon">Apply Coupon</div>
+                    <img class="arrow " src="https://static1.hkrtcdn.com/hknext/static/media/cart/arrow-right.svg">
+                </div>
+            </div>
+            <div>
+                <div class="proceed-to-checkout" onclick="paymentfun()">
+                    Proceed to Pay &#x20B9 2,523
+                </div>
+            </div>
+            <div id="order">
+                <div id="summary">
+                    Order Summary
+                </div>
+                <div class="flex">
+                    <div>Total MRP</div>
+                    <div>&#x20B9 3,173</div>
+                </div>
+                <div class="flex">
+                    <div>Total Discount</div>
+                    <div> &#x20B9 -650</div>
+                </div>
+                <div class="flex">
+                    <div>Loyalty Savings</div>
+                    <div>Became a Member</div>
+                </div>
+                <div>Get This Membership and start saving all year long</div>
+                <div class="flex">
+                    <div>Shipping charges</div>
+                    <div>FREE</div>
+
+                </div>
+                <div class="flex">
+                    <div>
+                        <h3>Final Payable</h3>
+                    </div>
+                    <div>&#x20B9 2523</div>
+                </div>
+            </div>
+            <div>
+                <div class="copyright-text">Copyright © 2022, HealthKart.com, or its affiliates</div>
+            </div>
+            <div>
+                <div class="save-your-cart">
+                    <div class="save-your-cart-img">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/cart/devices.svg">
+                    </div>
+                    <div class="save-your-cart-text">
+                        <p>Save your cart & access it across any device</p>
+                        <ul>
+                            <li><a class="savecart-login undefined">Login</a></li>
+                            <li><a class="savecart-signup undefined">Signup</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./cart_js_page/cart.js">
+</script>

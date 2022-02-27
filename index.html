@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAADeCAMAAAD4tEcNAAAAXVBMVEUAv7////8AvLy26Ojr+vqv4+Mew8Pk9fWA2dkyxcUAurq45ub3/f2y5+fw+/vW8vJZzs7L7+/D7Ox/2Nik4uJk0dGZ399CycmJ29t01dWd4eFPzMze9fW+6+tv1NQj4399AAAEAElEQVR4nO3d61LbQAwFYHuTmsY4hPsd3v8x2+lQIJa81i4EfA7n/IWm+oYZRdYuoWn503x3AV8QGTnyo4zDdsWW7TAyrvvEln49NqaGLUlGisjIERk5IiNHZOSIjByRkSMyckRGjsjIERk5IiNHZOSIjByRkSMyckRGjsjIERk5IiNHZOSIjByRkSMyckRGjsjIERk5IiNHZOSIjO/T7Sf6+vuZ/L7iV+/G2UzXEDWmo3Yvv0M/7+54P1PFd/sv3k4X/JJ1O87jtxmDtRca084Qh8x3Ixr7rSG2m+l6EI3p1hKvMuUAGtOpJd7mqgE0bixx1eeKADSeGOIuXwuc0Wmp65ki0IxeS52bGMCMXks9nasEy+i11IvZQrCMTku9zLZUQKNtqWeBMpCMvdNSI1UAGdPKEIfQIx6O0WupN6EiYIxeS72L7SxgjE5LvQ+uZWCMtqWez79rQBmdKfUxvFzDMPZOS40KQYz1LRXG6LXU3G4D0ei01OuSTTeC0bbU/G4Dz+i01JndBpzRaaknRcLlG72WOntQgGVMV5Y4u9sAMzotNbsuRjTalrotaqnLN/ZnhrgrJy7amO4NcW5djGZMz4Y4uy7+XOP8WvOjRqffPFRdVqg23toTeSfjOkuM9jg8uNv4NGNd4kan3wTWxVDG/tr82/BuA8TYOfNN9cWhhRofnH+7qkUu1Gjnm7bs2R/A6KeOiGU8q+s6UMbg4IFt/OJZ7nuM8eU4rrFs6QhqbG++0LgL/VmJ4083VtyTrjbehf4GxvhPnxQb7cNH+bJjoc/I/3PiXAJg2cu9ZOhSMmNdwakcgnGTmmTH89KHrEUb/602nM1V4bizZOPLc0Z6NF8pG3cWbHz9adnlVdmWdbnGt4kmXWS+iGx8/zaY7P6qZNxZqvF8/+WH8ddLxp2FGkcnxc4R3SX8vY5x40z2Gnl83Fmo0XzfR8YdFGNzY36QbPfl/v7/dnH+zHbvsemrxx0co/MeGhx3gIzpziBj9x+AjN5xXeiqDpKxdtyBMjqXPCPjDpSxctzBMr6W+5aBzug8Lz/NFoJmrBl30Izeld25IuCM3rgzUwqesXzcwTM2/ZNB5scdQKNzq/UoWwyi0TkeyI47iMYmXRpk7kYkpNE51M79PgSm0Rt3pp+XQY3Or31MjzugRud4YHoXiWp0npcntztx4+hNKbZKOZzROR6YOsw68GfodavYZ69V5ADnHbWVBD9D75DRZyFyREaOyMgRGTkiI0dk5IiMHJGRIzJyREaOyMgRGTkiI0dk5IiMHJGRIzJyREaOyMgRGTkiI0dk5IiMHJGRIzJyREaOyMgRGTkiI0d+pjH0GcBQ6cfG4RdfhpGRODJy5CcY/wCy8l9VoXLB9wAAAABJRU5ErkJggg=="
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./comoponents/navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Healthkart.com</title>
+</head>
+
+<body style="background-color: #f7f7f7;">
+    <div id="navbar" style="background-color: white;"></div>
+
+    <!-- 1st  carousel  -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img1.hkrtcdn.com/18640/bnr_1863900_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img3.hkrtcdn.com/18655/bnr_1865422_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img3.hkrtcdn.com/18548/bnr_1854722_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img5.hkrtcdn.com/18548/bnr_1854724_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img6.hkrtcdn.com/14609/bnr_1460845_o.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img6.hkrtcdn.com/14853/bnr_1485285_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img1.hkrtcdn.com/16539/bnr_1653880_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="https://img3.hkrtcdn.com/16539/bnr_1653882_o.jpg" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Flash sale carousel section -->
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide mt-5 main_div" data-bs-touch="false" data-bs-interval="false">
+
+        <div class="d-flex">
+            <h5>
+                <b><i class="bi bi-lightning-charge-fill"></i>Flash Sale</b>
+            </h5>
+            <button class="view_all_button" onclick="window.location.href='flase_sale.html'">View All</button>
+        </div>
+
+        <div class="carousel-inner main_div2">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img10.hkrtcdn.com/12080/prd_1207919-MuscleBlaze-Mass-Gainer-XXL-6.6-lb-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img8.hkrtcdn.com/14847/prd_1484647-MuscleBlaze-Creatine-Monohydrate-Unflavoured-0.88-lb_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/13508/prd_1350711-TrueBasics-Pre-Pro-Biotics-Immunity-30-capsules-Unflavoured_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img1.hkrtcdn.com/1691/prd_169080_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img4.hkrtcdn.com/11965/prd_1196443-MuscleBlaze-High-Protein-Natural-Peanut-Butter-Unsweetened-0.750-kg-Crunchy_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/15438/prd_1543781-Bold-Care-Surge-60-tablets_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/16744/prd_1674302-MuscleBlaze-High-Protein-Muesli-1-kg-Dark-Chocolate-Cranberry_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/1130/prd_112915_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+
+                        <img src="https://img8.hkrtcdn.com/15157/prd_1515607-Yours-Truly-Curcumin-Enriched-Immunity-Gummies-Mango-Flavour-30-gummies_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/14800/prd_1479965-bGREEN-Plant-Protein-Smoothie-by-MuscleBlaze-Berry-Delight-1.1-lb_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="carousel-button" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <i class="bi bi-arrow-left-circle-fill arrow_left"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button id="carousel-button" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon slide-button" aria-hidden="true"></span> -->
+        <i class="bi bi-arrow-right-circle-fill arrow_right"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+    <!-- Trading Now carousel -->
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide mt-5 main_div" data-bs-touch="false" data-bs-interval="false">
+        <div class="d-flex">
+            <h5>
+                <b>Tranding Now</b>
+            </h5>
+            <button class="view_all_button" onclick="window.location.href='trending.html'">View All</button>
+        </div>
+
+        <div class="carousel-inner main_div2">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Biozyme Whey Protein, 4.4 lb, Rich Milk Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹5399
+                    </div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 5999</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img7.hkrtcdn.com/16989/prd_1698896-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Biozyme Performance Whey, 4.4 lb, Rich Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 4399</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 6149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img10.hkrtcdn.com/12080/prd_1207919-MuscleBlaze-Mass-Gainer-XXL-6.6-lb-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb, Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2999</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/16744/prd_1674302-MuscleBlaze-High-Protein-Muesli-1-kg-Dark-Chocolate-Cranberry_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze High Protein Muesli, 1 kg, Dark Chocolate & Cranberry
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 649</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 825</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img4.hkrtcdn.com/11965/prd_1196443-MuscleBlaze-High-Protein-Natural-Peanut-Butter-Unsweetened-0.750-kg-Crunchy_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/15438/prd_1543781-Bold-Care-Surge-60-tablets_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/16744/prd_1674302-MuscleBlaze-High-Protein-Muesli-1-kg-Dark-Chocolate-Cranberry_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/1130/prd_112915_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+
+                        <img src="https://img8.hkrtcdn.com/15157/prd_1515607-Yours-Truly-Curcumin-Enriched-Immunity-Gummies-Mango-Flavour-30-gummies_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/14800/prd_1479965-bGREEN-Plant-Protein-Smoothie-by-MuscleBlaze-Berry-Delight-1.1-lb_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="carousel-button" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <i class="bi bi-arrow-left-circle-fill arrow_left"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button id="carousel-button" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon slide-button" aria-hidden="true"></span> -->
+        <i class="bi bi-arrow-right-circle-fill arrow_right"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- hi what are you looking for div -->
+    <div class="looking-for mt-4 mb-0">
+        <h2><b>Hi, What are looking for?</b></h2>
+    </div>
+
+    <div class="suggetion">
+        <div>
+            <img src="https://img2.hkrtcdn.com/13437/normal_1343641_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img8.hkrtcdn.com/13471/normal_1347067_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img8.hkrtcdn.com/13530/bnr_1352997_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img6.hkrtcdn.com/15625/bnr_1562425_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img4.hkrtcdn.com/13471/normal_1347073_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img6.hkrtcdn.com/13471/normal_1347075_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img4.hkrtcdn.com/13465/normal_1346413_o.png" alt="" />
+        </div>
+        <div>
+            <img src="https://img10.hkrtcdn.com/13471/normal_1347079_o.png" alt="" />
+        </div>
+    </div>
+
+    <div class="popular-sports">
+        <h5 class="ms-5 mt-4"><b>Popular in Sports Nutrition</b></h4>
+            <div class="d-flex Sports-div ">
+                <div class="ms-5 ">
+                    <img class="ms-5 me-5" src="https://img2.hkrtcdn.com/6544/bnr_654341_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-2">Whey Proteins</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img6.hkrtcdn.com/6544/bnr_654355_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b>Mass Gainers</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img4.hkrtcdn.com/6544/bnr_654343_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-3">Amino Acid</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img8.hkrtcdn.com/6544/bnr_654347_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-4">Pre-Workout</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5 " src="https://img8.hkrtcdn.com/6544/bnr_654357_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-5">Fat Burner</b></h6>
+                </div>
+
+
+
+
+
+
+            </div>
+    </div>
+
+
+
+    <div class="popular-sports mt-5">
+        <h5 class="ms-5 mt-2"><b>Popular in Fitness</b></h4>
+            <div class="d-flex Sports-div ">
+                <div class="ms-5 ">
+                    <img class="ms-5 me-5" src="https://img2.hkrtcdn.com/3802/bnr_380131_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b>Gym Essentials</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img2.hkrtcdn.com/3801/bnr_380091_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b>Fitness Equipment</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img6.hkrtcdn.com/3802/bnr_380125_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-1">Gym Accessories</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5" src="https://img10.hkrtcdn.com/3802/bnr_380129_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-2">Gym Supports</b></h6>
+                </div>
+                <div>
+                    <img class="ms-5 me-5 " src="https://img8.hkrtcdn.com/6544/bnr_654357_o.png" alt="">
+                    <h6 class="ms-5 mt-3"><b class="ms-5">Fat Burner</b></h6>
+                </div>
+
+
+
+
+
+
+            </div>
+    </div>
+
+    <!-- tranding in whey -->
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide mt-5 main_div" data-bs-touch="false" data-bs-interval="false">
+        <div class="d-flex">
+            <h5>
+                <b>Tranding in Whey Proteins</b>
+            </h5>
+            <button class="view_all_button" style="margin-left: 70%;">View All</button>
+        </div>
+
+        <div class="carousel-inner main_div2">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img10.hkrtcdn.com/12080/prd_1207919-MuscleBlaze-Mass-Gainer-XXL-6.6-lb-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img8.hkrtcdn.com/14847/prd_1484647-MuscleBlaze-Creatine-Monohydrate-Unflavoured-0.88-lb_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/13508/prd_1350711-TrueBasics-Pre-Pro-Biotics-Immunity-30-capsules-Unflavoured_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img1.hkrtcdn.com/1691/prd_169080_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img4.hkrtcdn.com/11965/prd_1196443-MuscleBlaze-High-Protein-Natural-Peanut-Butter-Unsweetened-0.750-kg-Crunchy_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/18457/prd_1845622-MuscleTech-Nitro-Tech-Whey-Protein-4.4-lb-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/15438/prd_1543781-Bold-Care-Surge-60-tablets_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img3.hkrtcdn.com/16744/prd_1674302-MuscleBlaze-High-Protein-Muesli-1-kg-Dark-Chocolate-Cranberry_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/1130/prd_112915_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+
+                        <img src="https://img8.hkrtcdn.com/15157/prd_1515607-Yours-Truly-Curcumin-Enriched-Immunity-Gummies-Mango-Flavour-30-gummies_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product_div">
+                        <div id="prodict_info">
+                            <h6 class="mt-2 ms-3 mb-0">Benifits</h6>
+                            <p class="mt-2 ms-3 mb-0">Helps in Muscle Bulding</p>
+                            <p class="mt-2 ms-3 mb-0">Protein : 25gm</p>
+                            <p class="mt-2 ms-3 mb-0">BCAA : 5.51gm</p>
+                            <p class="mt-2 ms-3 mb-0">EAA : 11.75gm</p>
+                        </div>
+                        <img src="https://img6.hkrtcdn.com/14800/prd_1479965-bGREEN-Plant-Protein-Smoothie-by-MuscleBlaze-Berry-Delight-1.1-lb_c_m.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-title fw-normal small protein_name">
+                                MuscleBlaze Mass Gainer XXL, 6.6 lb Chocolate
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div class="d-flex lh-1 justify-content-between">
+                                <small>
+                    <div class="text-danger fw-bold mt-2">₹ 2799</div>
+                  </small>
+                                <small>
+                    <p class="text-muted">
+                      <span class="text-decoration-line-through">₹ 4,149</span>
+                      <button class="add_cart">
+                        <i class="bi bi-cart3 me-1"></i>ADD
+                      </button>
+                    </p>
+                  </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="carousel-button" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <i class="bi bi-arrow-left-circle-fill arrow_left"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button id="carousel-button" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon slide-button" aria-hidden="true"></span> -->
+        <i class="bi bi-arrow-right-circle-fill arrow_right"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="bi bi-arrow-up-circle-fill"></i
+  ></a>
+
+    <!-- footer part -->
+
+    <!-- Footer -->
+    <footer class="mt-5 footer">
+        <div class="d-flex py-5">
+            <div class="me-5">
+                <ul class="list-unstyled small fw-light ps-4">
+                    <li class="h6 f-13 fw-bold">HEALTHKART
+
+
+
+
+
+
+
+
+                    </li>
+                    <li class="mb-2">About Us</li>
+                    <li class="mb-2">Contact Us</li>
+                    <li class="mb-2">Refer & Earn</li>
+                    <li class="mb-2">Loyalty Program</li>
+                    <li class="mb-2">HK Consult</li>
+                    <li class="mb-2">Blogs, Videos & More</li>
+                    <li class="mb-2">FAQ</li>
+                    <li class="mb-2">Brand Directory</li>
+                    <li class="mb-2">Authenticity Guaranteed</li>
+                    <li class="mb-2">Careers</li>
+                </ul>
+            </div>
+
+
+            <div class="me-5">
+                <ul class="list-unstyled small fw-light ps-4">
+                    <li class="h6 f-13 fw-bold">BRANDS
+
+
+
+
+
+                    </li>
+                    <li class="mb-2">MuscleBlaze</li>
+                    <li class="mb-2">TrueBasics</li>
+                    <li class="mb-2">JustHer</li>
+                    <li class="mb-2">Trunk Club</li>
+                    <li class="mb-2">Nouriza</li>
+                    <li class="mb-2">Virtual Events</li>
+                    <li class="mb-2">Gritzo</li>
+                    <li class="mb-2">bGREEN</li>
+
+                </ul>
+            </div>
+
+            <div class="me-5">
+                <ul class="list-unstyled small fw-light ps-4">
+                    <li class="h6 f-13 fw-bold">POLICIES
+
+
+
+                    </li>
+                    <li class="mb-2"> Terms & Conditions</li>
+                    <li class="mb-2">Delivery Policy</li>
+                    <li class="mb-2">Privacy Policy</li>
+                    <li class="mb-2">Returns Policy</li>
+                </ul>
+            </div>
+
+            <div class="me-5">
+                <ul class="list-unstyled small fw-light ps-4">
+                    <li class="h6 f-13 fw-bold">HEALTH & FITNESS
+
+
+
+
+
+
+
+
+
+                    </li>
+                    <li>Bodybuilding</li>
+                    <li>Weight Loss</li>
+                    <li>Hair & Skin Care</li>
+                    <li>Sports Nutrition</li>
+                    <li>Vitamins & Supplements</li>
+                    <li>Ayurveda & Herbs</li>
+                    <li> Health Food & Drinks</li>
+                    <li>Fitness</li>
+                    <li>Wellness</li>
+                    <li>Consult Plans</li>
+
+                </ul>
+            </div>
+
+
+            <div class="me-5">
+                <ul class="list-unstyled small fw-light ps-4">
+                    <li class="h6 f-13 fw-bold">QUICK LINKS
+
+
+
+
+
+
+
+
+                    </li>
+                    <li>My Account</li>
+                    <li>Track Your Order</li>
+                    <li>Store Locator</li>
+                    <li>HK Cash</li>
+                    <li> HK Coupons</li>
+                    <li>FAQs</li>
+                    <li> Sell On HealthKart</li>
+
+
+                </ul>
+            </div>
+
+            <div class="">
+                <div class="ps-5">
+                    <p><i class="bi bi-phone pe-2"></i>Get our Apps</p>
+                    <div class="d-flex">
+                        <i class="bi bi-instagram h4"></i>
+                        <i class="bi bi-facebook h4 ms-3"></i>
+                        <i class="bi bi-pinterest h4 ms-3"></i>
+                        <i class="bi bi-twitter h4 ms-3"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="d-flex flex-start small pb-3 fw-light">
+            <div class="ms-4">Your Privacy Rights</div>
+            <div class="ms-4">Do Not Sell My Info</div>
+            <div class="ms-4">Terms & Conditions</div>
+            <div class="ms-4">Interest-Based Ads</div>
+            <div class="ms-4">©️2022 Nordstrom, Inc.</div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
+<script type="module">
+
+    import navbar from "./comoponents/navbar.js"; let nav = document.getElementById("navbar"); nav.innerHTML = navbar(); document.querySelector(".logo").addEventListener('click', ()=>{ window.location.href="index.html" }) ;document.querySelector(".login").addEventListener('click',
+    (event)=>{ event.preventDefault(); console.log("yes"); window.location.href="Login.html" }); document.querySelector(".signup").addEventListener('click', (event)=>{ event.preventDefault(); console.log("yes") ;window.location.href="Login.html" }) ;document.querySelector(".cart").addEventListener('click',
+    ()=>{ window.location.href="cart.html" }); //Get the button var backtoTopbtn = document.getElementById("back-to-top"); // When the user scrolls down 1000px from the top of the document, show the button window.onscroll = function () { scrollFunction();
+    ; function scrollFunction() { if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000 ) { backtoTopbtn.style.display = "block"; } else { backtoTopbtn.style.display = "none"; } }
+</script>

@@ -110,14 +110,32 @@ function fldatarr() {
             price: `1389`
         }
     ]
+    
+
 
     return data
 }
 
+let url = `http://localhost:5000/flsale`
+feactchdata(url)
+async function feactchdata(){
+try{
+    let res = await fetch(url)
+    let data = await res.json()
+    let userdata = data
+    
+    console.log(userdata)
+    appendflase_data(userdata)
+}
+catch(err){
+    return err
+    console.log(err)
+}
+}
 
 
-
-function appendflase_data(datarr, main) {
+function appendflase_data(datarr) {
+    let main = document.querySelector(".showappdata")
     datarr.forEach(function(element) {
         let div = document.createElement("div")
         let image = document.createElement("img")
@@ -163,7 +181,6 @@ function appendflase_data(datarr, main) {
 
 
         pricediv.className = "pricediv"
-
 
 
 

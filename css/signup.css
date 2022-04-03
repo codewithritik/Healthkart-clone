@@ -1,0 +1,200 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://static1.hkrtcdn.com/hknext/static/media/common/login/popUpDesktop.webp");
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    height: 900px;
+}
+
+.cont {
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.img1 {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("https://static1.hkrtcdn.com/hknext/static/media/signupFlow/login-bg.png");
+    background-size: 400px 700px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+h4 {
+    font-size: 23px;
+}
+
+.sub {
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 26px;
+}
+
+span {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.img2 {
+    margin-bottom: 20px;
+}
+
+.img2 img {
+    width: 5%;
+}
+
+.head1 {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(102, 102, 112);
+}
+
+.login {
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.bord {
+    width: 90%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    height: 10px;
+    margin: auto;
+    margin-top: -10px;
+}
+
+.login:hover {
+    color: rgb(0, 174, 174);
+    text-decoration: underline;
+}
+
+.signup:hover {
+    color: rgb(0, 174, 174);
+    text-decoration: underline;
+}
+
+.bord:hover {
+    border-color: rgb(0, 174, 174);
+}
+
+.mobile {
+    font-size: 15px;
+    margin-left: 6%;
+    font-family: Roboto, sans-serif;
+}
+
+.head2 {
+    margin-top: 20px;
+}
+
+.mobile_value {
+    width: 80%;
+    margin-left: 6%;
+    height: 40px;
+    border-radius: 7px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile_value:placeholder-shown {
+    padding-left: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 6%;
+    width: 84%;
+    height: 40px;
+    background-color: rgb(0, 174, 174);
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+h5 {
+    margin: none;
+    margin-left: 10%;
+    margin-top: 8px;
+    color: rgb(102, 102, 102);
+    font-family: Roboto, sans-serif;
+}
+
+.bord1 {
+    width: 80%;
+    display: flex;
+    margin-left: 6%;
+}
+
+.line1 {
+    width: 45%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    height: 5px;
+}
+
+.line2 {
+    width: 45%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    height: 5px;
+}
+
+h6 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.google {
+    width: 30%;
+    height: 50px;
+    padding: 12px 10px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* margin-left: 35%; */
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 50%;
+}
+
+.google img {
+    width: 15%;
+    padding-left: 10px;
+}
+
+
+/* .goo{
+  font-size: 14px;
+  margin-left: 15%;
+  margin-top: 10px;
+font-family: Roboto,sans-serif;
+color: rgb(102,102,102);
+
+} */
+
+.bord2 {
+    margin-top: 10%;
+    margin-left: -10px;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    height: 5px;
+}
+
+.foot {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+a {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 5px;
+}

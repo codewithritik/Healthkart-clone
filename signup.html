@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title></title>
+    <link rel="stylesheet" href="./css/signup.css">
+
+</head>
+
+<body>
+    <div class="cont">
+        <div class="img1">
+            <h4>Why Sign Up?
+                <h4>
+                    <div class="img2">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"><span>Over 1.5 million satisfied customers</span>
+
+                    </div>
+                    <div class="img2">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"><span>Earn HK cash on every order</span>
+
+                    </div>
+                    <div class="img2">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"><span>Get personal fitness experience</span>
+
+                    </div>
+                </h4>
+            </h4>
+
+        </div>
+
+        <div class="sub">
+            <div class="head1">
+                <h3 class="login" id="login" onclick="redirect_to_login()">LogIn</h3>
+                <h3 class="signup" id="signup">SignUp</h3>
+            </div>
+            <div class="bord"></div>
+            <div class="head2">
+                <h4 class="mobile">Enter mobile number</h4>
+                <input type="number" placeholder="Enter 10 digits mobile Number" id="user_value" class="mobile_value">
+
+            </div>
+            <button class="btn" onclick="signup()">Send  OTP</button>
+            <h4>We will send a OTP to verify Your Mobile</h4>
+
+            <div class="bord1">
+                <div class="line1"></div>
+                <h6>Or</h6>
+                <div class="line2"></div>
+            </div>
+            <button class="google" id="google" onclick="googleauth()">
+                            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/Logo Google.svg" />
+                        <span>Google</span>
+
+                        </button>
+            <div class="bord2"></div>
+            <span class="foot">By logging in you agree to our</span><a href="">Terms & Conditions</a>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    async function signup() {
+
+        window.location.href = "./otp.html"
+        let ph = document.querySelector("#user_value").value
+        let data = {
+            mobile_no: ph
+        }
+
+        let url = "http://localhost:5000/signup"
+    
+        try {
+            const res = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-origin": "*"
+                },
+                body: JSON.stringify(
+                    data
+                ),
+
+            })
+
+            const sendRequest = await fetch(url, data)
+            const response = await sendRequest.json()
+
+
+
+        } catch (error) {
+
+            console.log(error)
+        }
+
+    
+    }
+
+    function redirect_to_login() {
+        window.location.href = "login.html";
+    }
+ 
+    function redirect_to_login(){
+        window.location.href="login.html";
+    }
+
+</script>

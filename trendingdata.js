@@ -133,10 +133,25 @@ price:"399" }
  return data_aditya;
 }
 
+let url = `http://localhost:5000/product`
+feactchdata(url)
+async function feactchdata(){
+try{
+    let res = await fetch(url)
+    let data = await res.json()
+    let userdata = data
+    
+    console.log(userdata)
+    appendflase_data(userdata)
+}
+catch(err){
+    return err
+}
+}
 
 
-
-function appendflase_data(datarr,main){
+function appendflase_data(datarr){
+  let main = document.querySelector(".showappdata")
     datarr.map((element) => {
             let div = document.createElement("div")
             let image = document.createElement("img")
@@ -216,6 +231,7 @@ function quickfuntion(){
     return `<button><i class="bi bi-lightning-charge-fill"></i>Quick Buy</button>`;
 
 }
+
 
 
 document.getElementById('sortByVariants').addEventListener('change', function() {

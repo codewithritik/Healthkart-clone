@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="img1">
+            <h4>Why Login?</h4>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Manage your orders</span>
+
+            </div>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Get exclusive deals and offers</span>
+
+            </div>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Personalized Recommendations</span>
+
+            </div>
+             
+             
+        </div>
+        <div class="sub">
+            <div class="head1">
+             <h3 class="login" id="login" >LogIn</h3>
+            <h3 class="signup" id="signup" onclick="redirect_to_signup()">SignUp</h3>
+            </div>
+            <div class="bord"></div>
+            <div class="head2">
+                <h4 class="mobile">mobile Number</h4>
+                <input type="email" placeholder="Enter 10 Digits Mobile Number" id="email_value" class="mobile_value">
+               
+            </div>
+            <button class="btn" onclick="signin()">Login</button>
+           
+            <div class="bord1">
+                <div class="line1"></div>
+                <h6>Or</h6>
+                <div class="line2"></div>
+            </div>
+            <button class="google" id="google" onclick="googleauth()">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/common/Logo Google.svg" />
+               <span>Google</span>
+
+            </button>
+            <div class="bord2"></div>
+            <span class="foot">By logging in you agree to our</span><a href="">Terms & Conditions</a>
+
+            
+            
+        </div>
+        
+    </div>
+        
+
+    </div>
+
+    
+</body>
+</html>
+<script>
+    function redirect_to_signup() {
+        window.location.href = "signup.html"
+    }
+    let url = "http://localhost:5000/signup"
+    async function signin() {
+        // window.location.href = "index.html"
+        try {
+            let data = await fetch(url)
+            data = await data.json()
+            check(data);
+            //console.log(data.mobile_no)
+        } catch (err) {
+            console.log(err.message)
+        }
+    }
+    let a = false;
+
+    function check(data) {
+        let loginValue = document.querySelector("#email_value").value
+        console.log(loginValue)
+        let mobArr = []
+        data.forEach(function(el) {
+
+            mobArr.push(el.mobile_no)
+        })
+
+        for (let i = 0; i < mobArr.length; i++) {
+            if (loginValue == mobArr[i]) {
+                a = true;
+                //return a;
+            }
+        }
+        if (a == true) {
+            console.log(a)
+            alert("Login successful!")
+            window.location.href = "./index.html"
+        } else {
+            alert("Your Number does not exist or incorrect")
+        }
+        //console.log(mobArr[2])
+    }
+    function googleauth(){
+            window.location.href="http://localhost:5000/auth/google/"
+
+        }
+</script>
